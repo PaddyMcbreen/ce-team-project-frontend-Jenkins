@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t shenukacj/learners-api .'
+        sh 'docker build -t shenukacj/learners-frontend .'
       }
     }
     stage('Login') {
@@ -19,7 +19,7 @@ pipeline {
     }
     stage('Push') {
       steps {
-        sh 'docker push shenukacj/learners-api'
+        sh 'docker push shenukacj/learners-frontend'
       }
     }
   }
