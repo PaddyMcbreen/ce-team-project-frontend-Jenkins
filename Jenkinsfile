@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t shenukacj/learners-frontend:1.0.3 .'
+        sh 'docker build -t shenukacj/learners-frontend:1.0.4 .'
       }
     }
     stage('Login') {
@@ -19,7 +19,7 @@ pipeline {
     }
     stage('Push') {
       steps {
-        sh 'docker push shenukacj/learners-frontend:1.0.3'
+        sh 'docker push shenukacj/learners-frontend:1.0.4'
       }
     }
   }
